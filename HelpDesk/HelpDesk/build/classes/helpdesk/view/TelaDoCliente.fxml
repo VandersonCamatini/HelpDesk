@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane fx:id="tbpJanelas" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpdesk.controller.TelaDoClienteController">
+   <tabs>
+      <Tab fx:id="tabPaginaInicial" text="Página inicial">
+         <content>
+            <AnchorPane prefHeight="450.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="tblChamados" layoutX="20.0" layoutY="99.0" onMouseClicked="#selectRowOnAction" prefHeight="230.0" prefWidth="721.0">
+                    <columns>
+                      <TableColumn fx:id="tbcDataInicial" prefWidth="108.0" text="Data Inicial">
+                         <cellValueFactory>
+                            <PropertyValueFactory property="dataInicial" />
+                         </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="tbcEmpresa" prefWidth="88.0" text="Empresa">
+                            <cellValueFactory>
+                            <PropertyValueFactory property="codigoEmpresa" />
+                          </cellValueFactory>
+                      </TableColumn> 
+                        <TableColumn fx:id="tbcSolicitante" prefWidth="104.0" text="Solicitante">
+                            <cellValueFactory>
+                            <PropertyValueFactory property="codigoCliente" />
+                          </cellValueFactory>
+                        </TableColumn>    
+                        <TableColumn fx:id="tbcTitulo" prefWidth="100.0" text="Título">
+                            <cellValueFactory>
+                            <PropertyValueFactory property="titulo" />
+                          </cellValueFactory>
+                        </TableColumn>    
+                        <TableColumn fx:id="tbcAtendente" prefWidth="120.0" text="Atendente">
+                            <cellValueFactory>
+                            <PropertyValueFactory property="codigoAtendente" />
+                          </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tbcStatus" prefWidth="92.0" text="Status">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="status" />
+                           </cellValueFactory>
+                        </TableColumn>    
+                        <TableColumn fx:id="tbcDataFinal" minWidth="0.0" prefWidth="108.0" text="Data Final">
+                            <cellValueFactory>
+                            <PropertyValueFactory property="dataFinal" />
+                          </cellValueFactory>
+                        </TableColumn>    
+                    </columns>
+                  </TableView>
+                  <Text fx:id="txtChamados" layoutX="60.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEUS CHAMADOS" wrappingWidth="249.451171875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="649.0" layoutY="41.0" mnemonicParsing="false" onAction="#btncCarregarTudoOnAction" text="Carregar Tudo" />
+                  <Button layoutX="519.0" layoutY="41.0" mnemonicParsing="false" onAction="#btncAbrirChamadoOnAction" text="Abrir um chamado" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpdesk.controller.TelaDeChamadaController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="450.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tfTitulo" layoutX="179.0" layoutY="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Título" />
+            <TextArea fx:id="tfDescricao" layoutX="179.0" layoutY="242.0" prefHeight="132.0" prefWidth="323.0" promptText="Descrição do problema" />
+            <Button fx:id="btnEnviar" layoutX="180.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnEnviarOnAction" prefHeight="25.0" prefWidth="79.0" text="Enviar" />
+            <Button layoutX="180.0" layoutY="37.0" mnemonicParsing="false" onAction="#btnNovoChamado" prefHeight="25.0" prefWidth="107.0" text="Abrir Chamado" />
+            <TextField fx:id="tfCodigo" editable="false" layoutX="180.0" layoutY="84.0" prefHeight="25.0" prefWidth="107.0" promptText="Codigo" />
+            <TextField fx:id="tfSolicitante" layoutX="179.0" layoutY="118.0" prefHeight="25.0" prefWidth="200.0" promptText="Solicitante" />
+            <CheckBox fx:id="cbBaixa" layoutX="179.0" layoutY="171.0" mnemonicParsing="false" onAction="#baixaOnAction" text="Baixa" />
+            <CheckBox fx:id="cbMedia" layoutX="264.0" layoutY="171.0" mnemonicParsing="false" onAction="#mediaOnAction" text="Média" />
+            <CheckBox fx:id="cbAlta" layoutX="341.0" layoutY="171.0" mnemonicParsing="false" onAction="#altaOnAction" text="Alta" />
+            <Text layoutX="181.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nível de prioridade:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpdesk.controller.TelaDeResolucaoController">
+   <children>
+      <TextField fx:id="tfEmpresa" editable="false" layoutX="95.0" layoutY="49.0" promptText="Empresa" />
+      <TextField fx:id="tfAtendente" layoutX="95.0" layoutY="93.0" promptText="Atendente" />
+      <TextField fx:id="tfSolicitante" editable="false" layoutX="95.0" layoutY="144.0" promptText="Solicitante" />
+      <TextField fx:id="tfDataInicial" editable="false" layoutX="95.0" layoutY="201.0" promptText="Data Inicial" />
+      <TextField fx:id="tfTitulo" editable="false" layoutX="95.0" layoutY="246.0" prefHeight="8.0" prefWidth="149.0" promptText="Titulo" />
+      <TextField fx:id="tfPrioridade" editable="false" layoutX="95.0" layoutY="296.0" promptText="Prioridade" />
+      <Button layoutX="95.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnIniciarResolucaoOnAction" prefHeight="25.0" prefWidth="149.0" text="Iniciar resolução" />
+      <Button layoutX="95.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnSalvarOnAction" prefHeight="25.0" prefWidth="149.0" text="Salvar e enviar" />
+      <Text layoutX="26.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atendente :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solicitante :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Inicial :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="49.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Título :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prioridade :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="285.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Problema do solicitante :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="284.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolução do problema :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="tfProblemaSolicitante" editable="false" layoutX="284.0" layoutY="52.0" prefHeight="145.0" prefWidth="292.0" promptText="Problema do Solicitante" />
+      <TextArea fx:id="tfResolucaoDoProblema" layoutX="285.0" layoutY="224.0" prefHeight="145.0" prefWidth="292.0" promptText="Resolução do problema" />
+   </children>
+</AnchorPane>

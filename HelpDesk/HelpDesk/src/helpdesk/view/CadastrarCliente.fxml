@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helpdesk.controller.CadastrarClienteController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <TextField fx:id="tfSenhaCliente" layoutX="231.0" layoutY="337.0" prefHeight="25.0" prefWidth="391.0" promptText="Senha do usuário" />
+            <TextField fx:id="tfEmailCliente" layoutX="232.0" layoutY="140.0" prefHeight="25.0" prefWidth="391.0" promptText="Email para contato" />
+            <TextField fx:id="tfCodigoDaEmpresa" layoutX="231.0" layoutY="187.0" prefHeight="25.0" prefWidth="391.0" promptText="Nome  da empresa que você trabalha" />
+            <TextField fx:id="tfTelefoneCliente" layoutX="231.0" layoutY="233.0" prefHeight="25.0" prefWidth="391.0" promptText="Telefone / Celular" />
+            <TextField fx:id="tfUsuarioCliente" layoutX="232.0" layoutY="283.0" prefHeight="25.0" prefWidth="391.0" promptText="Nome do usuário" />
+            <TextField fx:id="tfCodigo" editable="false" layoutX="231.0" layoutY="61.0" prefHeight="25.0" prefWidth="103.0" promptText="Código" />
+            <Button fx:id="btnSalvar1" layoutX="231.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnSalvarOnAction" prefHeight="25.0" prefWidth="89.0" text="Salvar" />
+            <TextField fx:id="tfNomeCliente" layoutX="232.0" layoutY="102.0" prefHeight="25.0" prefWidth="391.0" promptText="Nome completo verdadeiro" />
+            <Button fx:id="btnCriarCliente" layoutX="231.0" layoutY="23.0" mnemonicParsing="false" onAction="#btncCriarClienteOnAction" text="Criar nova conta" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
